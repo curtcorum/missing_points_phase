@@ -48,8 +48,6 @@ And select the .mat file to reconstruct via the dialog:
 
 Output including a log and nifti files will be created in the same directory as the p-file or scan archive.
 
-Note that the density compensation function (dcf) may need to be calculated the first time a vieworder is used.
-
 Datasets with various amounts of noise and missing points can be downloaded from:
 
 https://www.dropbox.com/sh/16fctr9otvzbj3s/AACqbi1CINd2NuMTi72tg8daa?dl=0
