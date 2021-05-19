@@ -20,7 +20,7 @@ So far tested only in linux environment, specifically Ubuntu 18.04
 
 Because there are submodules please use '--recursive' to clone:
     
-    git clone --recursive https://github.com/curtcorum/ngfn_simulation_recon
+    git clone --recursive https://github.com/curtcorum/missing_points_phase
     
     git submodule init
     
