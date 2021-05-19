@@ -46,7 +46,7 @@ And select the .mat file to reconstruct via the dialog:
     
 ![file dialog for p-file](https://github.com/curtcorum/ngfn_simulation_recon/blob/ismrm2021/ngfnRecon_dialog.png)
 
-Output including a log and nifti files will be created in the same directory as the p-file or scan archive.
+Output including a log and nifti files will be created in the same directory as the source dataset.
 
 Datasets with various amounts of noise and missing points can be downloaded from:
 
