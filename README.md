@@ -32,9 +32,9 @@ To build mexa64 binaries
     
     make
 
-To do a gridding reconstruction of Silent Scan p-file data, etc:
+To do a gridding reconstruction and plot figures from an example dataset:
 
-    cd ngfn_simulation_recon
+    cd missing_points_phase
 
     nice matlab
 
