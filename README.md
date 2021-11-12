@@ -22,6 +22,8 @@ Because there are submodules please use '--recursive' to clone:
     
     git clone --recursive git@github.com:curtcorum/missing_points_phase.git
     
+    cd missing_points_phase
+    
     git submodule init
     
     git submodule update
@@ -44,7 +46,7 @@ Once matlab starts up:
     
 And select the .mat file to reconstruct via the dialog:
     
-![file dialog for p-file](https://github.com/curtcorum/ngfn_simulation_recon/blob/ismrm2021/ngfnRecon_dialog.png)
+![file dialog for p-file](https://github.com/curtcorum/missing_points_phase/ngfnRecon_dialog.png)
 
 Output including a log and nifti files will be created in the same directory as the source dataset.
 
