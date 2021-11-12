@@ -1,12 +1,15 @@
 % startup.m
 
 % for docker container and git cloning, set up path on first run
-ngfnPathDef = '../ngfn_simulation_recon/pathdef.m';
-ngfnPath = genpath( '../ngfn_simulation_recon');
+ngfnPathDef = '../missing_points_phase/pathdef.m';
+ngfnPath = genpath( '../missing_points_phase');
 if exist( ngfnPathDef) == 0
     fprintf( '\n'); warning( 'Creating initial %s\n', ngfnPathDef);
     addpath( pathdef); addpath( ngfnPath); savepath( ngfnPathDef);
 end
+
+% set up environment
+setenv( 'NGFN_startPath', pwd);
 
 % show version and packages
 ver; fprintf( '-----------------------------------------------------------------------------------------------------\n');
@@ -33,7 +36,7 @@ fprintf( '----------------------------------------------------------------------
 [status, result] = unix( 'whoami'); fprintf( 'Username: %s', result);
 
 % python version
-pythonEnv = pyenv; pyVer = pythonEnv.Version; fprintf( 'Python: v%s\n', pyVer);
+%pythonEnv = pyenv; pyVer = pythonEnv.Version; fprintf( 'Python: v%s\n', pyVer);
 
 % start time
 fprintf( 'Start Time: %s\n', datestr(now));

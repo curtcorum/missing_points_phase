@@ -106,7 +106,8 @@ classdef ngfnRecon
             %pkg load signal; (octave ok
             
             % paths
-            obj.startPath = pwd;
+            obj.startPath = getenv('NGFN_startPath');
+            cd( obj.startPath);
             
             % prepare input
             if nargin < 1
@@ -189,8 +190,17 @@ classdef ngfnRecon
                     fprintf( '\n'); error( 'unknown case for filterindex, *** CAC 180227');
             end
             
+            reply = input( 'How many missing points to estimate? [0]:');
+            if isempty( reply)
+                Missing_Points = 0;
+            else
+                Missing_Points = reply;
+            end
+            
             STR = ''; STR = input('Enter a comment or return for none: ','s');
             if ~isempty( STR); saveDirName = strcat( saveDirName, STR, '_'); end;
+            
+            
             
             % check if exists
             if exist( obj.fidPath, 'dir')
@@ -263,6 +273,7 @@ classdef ngfnRecon
             if filterindex == 1
                 if strncmp( obj.fidName, 'forSSN_3d_', 10) %%% eventually make this a case sctucture, *** CAC 180110
                     obj = obj.get_forSSN_3d;
+                    obj.pars.rcvr_gate = Missing_Points;
                     obj = obj.doAutophase;
                     obj = obj.doKdata;
                     obj = obj.doImages;
@@ -293,6 +304,7 @@ classdef ngfnRecon
     %% External methods
     methods     % in external files
         obj = get_forSSN_3d( obj);       % loads a forSSN_3d mat file
+        
         obj = doDCF( obj);               % calculates the dcf
         obj = doKdata( obj);             % grids radial k-space and corrleated fid values to cartesian k-space values
         obj = doImages( obj);            % makes images and image series from kspCart and kspAPC
