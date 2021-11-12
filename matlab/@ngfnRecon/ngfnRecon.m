@@ -190,13 +190,6 @@ classdef ngfnRecon
                     fprintf( '\n'); error( 'unknown case for filterindex, *** CAC 180227');
             end
             
-            reply = input( 'How many missing points to estimate? [0]:');
-            if isempty( reply)
-                Missing_Points = 0;
-            else
-                Missing_Points = reply;
-            end
-            
             STR = ''; STR = input('Enter a comment or return for none: ','s');
             if ~isempty( STR); saveDirName = strcat( saveDirName, STR, '_'); end;
             
@@ -273,7 +266,6 @@ classdef ngfnRecon
             if filterindex == 1
                 if strncmp( obj.fidName, 'forSSN_3d_', 10) %%% eventually make this a case sctucture, *** CAC 180110
                     obj = obj.get_forSSN_3d;
-                    obj.pars.rcvr_gate = Missing_Points;
                     obj = obj.doAutophase;
                     obj = obj.doKdata;
                     obj = obj.doImages;
