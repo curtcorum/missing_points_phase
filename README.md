@@ -46,7 +46,7 @@ Once matlab starts up:
     
 And select the .mat file to reconstruct via the dialog:
     
-![file dialog for p-file](https://github.com/curtcorum/missing_points_phase/ngfnRecon_dialog.png)
+![file dialog for p-file](https://github.com/curtcorum/missing_points_phase/blob/ngfnRecon_dialog.png)
 
 Output including a log and nifti files will be created in the same directory as the source dataset.
 
