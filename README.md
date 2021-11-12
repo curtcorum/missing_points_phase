@@ -18,15 +18,11 @@ So far tested only in linux environments, specifically Ubuntu 18.04 and Ubuntu 2
 
     Requires: matlab
 
-Because there are submodules please use '--recursive' to clone:
+To clone and get started:
     
-    git clone --recursive git@github.com:curtcorum/missing_points_phase.git
+    git clone git@github.com:curtcorum/missing_points_phase.git
     
     cd missing_points_phase
-    
-    git submodule init
-    
-    git submodule update
 
 To build mexa64 binaries
 
@@ -36,7 +32,7 @@ To build mexa64 binaries
 
 To do a gridding reconstruction and plot figures from an example dataset:
 
-    cd missing_points_phase
+    cd ../..
 
     nice matlab
 
