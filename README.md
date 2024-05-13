@@ -1,7 +1,7 @@
 # missing_points_phase
 Replication code for ISMRM 2021 #1184
 
-Robust and Computationally Efficient Missing Point and Phase Estimation for Zero Echo Time (ZTE) Sequences
+[Robust and Computationally Efficient Missing Point and Phase Estimation for Zero Echo Time (ZTE) Sequences](https://archive.ismrm.org/2022/4068.html)
 
 Curtis Corum*1,2, Abdul Haseeb Ahmed2, Mathews Jacob2, Vincent Magnotta2 and Stanley Kruger2
 
