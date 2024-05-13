@@ -1,7 +1,7 @@
 # missing_points_phase
 Replication code for ISMRM 2021 #1184
 
-[Robust and Computationally Efficient Missing Point and Phase Estimation for Zero Echo Time (ZTE) Sequences](https://archive.ismrm.org/2022/4068.html)
+[Robust and Computationally Efficient Missing Point and Phase Estimation for Zero Echo Time (ZTE) Sequences](https://archive.ismrm.org/2021/1184.html)
 
 Curtis Corum*1,2, Abdul Haseeb Ahmed2, Mathews Jacob2, Vincent Magnotta2 and Stanley Kruger2
 
@@ -10,6 +10,14 @@ Curtis Corum*1,2, Abdul Haseeb Ahmed2, Mathews Jacob2, Vincent Magnotta2 and Sta
   2University of Iowa, Iowa City, IA, USA
 
   *Curtis Corum of Champaign Imaging LLC is developing products related to this research
+
+and ISMRM 2022 #4068
+
+[Robust and Computationally Efficient Missing Point and Phase Estimation for Multi-Channel Acquisition with  ZTE Sequences](https://archive.ismrm.org/2022/4068.html)
+
+Curtis A Corum1,2, Stanley J Kruger2, Mathews Jacob3, Vincent A Magnotta2, and James H Holmes2
+
+1Champaign Imaging LLC, Shoreview, MN, United States, 2Radiology, University of Iowa, Iowa City, IA, United States, 3Electrical and Computer Engineering, University of Iowa, Iowa City, IA, United States
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
